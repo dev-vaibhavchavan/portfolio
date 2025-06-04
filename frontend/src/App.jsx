@@ -1,0 +1,52 @@
+import Image from "./components/Image";
+import Navbar from "./components/Navbar";
+import Introduction from "./components/Introduction";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
+import { useTimeline } from "./context/TimelineContext";
+import { ScrollTrigger } from "gsap/all";
+import gsap from "gsap";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const App = () => {
+  let textRef = useRef();
+  let tl = useTimeline();
+
+  useGSAP(() => {
+    tl.from(
+      textRef.current,
+      {
+        y: 20,
+        duration: 0.6,
+        delay: 0.5,
+        ease: "power3.out",
+        opacity: 0,
+        stagger: 2,
+      },
+      0
+    );
+  });
+
+  return (
+    <>
+      <div
+        ref={textRef}
+        className="flex items-center justify-center poppins-extrabold font-black h-[100px] text-5xl">
+        PORTFOLIO
+      </div>
+      <div className="flex flex-row w-screen h-[600px] relative">
+        <div className=" w-[30%] flex justify-center items-center relative z-20">
+          <Image />
+        </div>
+        <div className="w-[70%] flex flex-col justify-center items-center">
+          <Navbar />
+          <Introduction />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default App;
+
