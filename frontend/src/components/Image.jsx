@@ -12,7 +12,7 @@ const Image = () => {
     gsap.to(img.current, {
       height: "200px",
       width: "200px",
-      x: 585,
+      x: 540.7,
       y: 0,
       borderRadius: "50%",
       scrollTrigger: {
@@ -62,13 +62,21 @@ const Image = () => {
         scrub: true,
       },
     });
+
+    gsap.to(".skills", {
+      opacity: 1,
+      scrollTrigger: {
+        trigger: "img",
+        start: "top 30%",
+        end: "bottom 50%",
+        scrub: true,
+      },
+    });
   });
 
   return (
-    <div className="w-[70%] h-[600px] flex flex-col justify-center">
-      <h1 className="name poppins-extrabold font-black">
-        vaibhav chavan
-      </h1>
+    <div className="w-[70%] h-[600px] relative left-10 flex flex-col justify-center">
+      <h1 className="name poppins-extrabold font-black">vaibhav chavan</h1>
       <h3 className="profession poppins-extralight font-thin">
         Undergraduate,YCIS satara.
       </h3>
@@ -83,5 +91,3 @@ const Image = () => {
 };
 
 export default Image;
-
-

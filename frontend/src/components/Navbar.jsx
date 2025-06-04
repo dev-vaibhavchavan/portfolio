@@ -18,7 +18,7 @@ const Navbar = () => {
   });
 
   return (
-    <div className="navbar gap-10 flex relative bottom-12 px-8 py-4 border-2 border-gray-400 rounded-md">
+    <div className="navbar gap-10 flex relative bottom-8 px-8 py-4 border-2 border-gray-400 rounded-md">
       <a
         href=""
         className="px-4 py-1 hover:rounded-sm hover:bg-white hover:text-black">

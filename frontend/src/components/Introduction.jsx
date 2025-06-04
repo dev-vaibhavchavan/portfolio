@@ -1,6 +1,6 @@
 const Introduction = () => {
   return (
-    <div className="intro w-[90%] top-10">
+    <div className="intro w-[90%] relative top-15">
       <p>
         Hiee , I am vaibhav chavan,a passionate MERN stack developer with a
         strong focus on building full-stack web applications. I've developed

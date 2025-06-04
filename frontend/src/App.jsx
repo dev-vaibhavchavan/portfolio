@@ -44,6 +44,16 @@ const App = () => {
           <Introduction />
         </div>
       </div>
+      <div className="skills w-[80%] h-[50px] flex items-center justify-around relative left-[126.6px] opacity-0">
+        <h3 className="px-5 py-3 rounded-sm bg-purple-700">
+          Good Problem Solver
+        </h3>
+        <h3 className="px-5 py-3 rounded-sm bg-purple-700">Clean Coder</h3>
+        <h3 className="px-5 py-3 rounded-sm bg-purple-700">Stack Agnostic</h3>
+        <h3 className="px-5 py-3 rounded-sm bg-purple-700">
+          Continuous Learner
+        </h3>
+      </div>
     </>
   );
 };
