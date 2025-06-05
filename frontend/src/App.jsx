@@ -6,6 +6,7 @@ import { useRef } from "react";
 import { useTimeline } from "./context/TimelineContext";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
+import Slider from "./components/Slider";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -54,6 +55,7 @@ const App = () => {
           Continuous Learner
         </h3>
       </div>
+      <Slider/>
     </>
   );
 };

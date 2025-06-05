@@ -57,7 +57,7 @@ const Image = () => {
       display: "none",
       scrollTrigger: {
         trigger: "img",
-        start: "top 55%",
+        start: "top 33%",
         end: "bottom 82%",
         scrub: true,
       },
