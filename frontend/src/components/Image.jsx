@@ -47,7 +47,7 @@ const Image = () => {
       display: "none",
       scrollTrigger: {
         trigger: ".name",
-        start: "top 25%",
+        start: "top 23%",
         end: "bottom 53%",
         scrub: true,
       },
@@ -57,7 +57,7 @@ const Image = () => {
       display: "none",
       scrollTrigger: {
         trigger: "img",
-        start: "top 33%",
+        start: "top 28%",
         end: "bottom 82%",
         scrub: true,
       },
@@ -72,12 +72,22 @@ const Image = () => {
         scrub: true,
       },
     });
+
+    gsap.to(".socials", {
+      display: "none",
+      scrollTrigger: {
+        trigger: "img",
+        start: "top 30%",
+        end: "bottom 73%",
+        scrub: true,
+      },
+    });
   });
 
   return (
-    <div className="w-[70%] h-[600px] relative left-10 flex flex-col justify-center">
-      <h1 className="name poppins-extrabold font-black">vaibhav chavan</h1>
-      <h3 className="profession poppins-extralight font-thin">
+    <div className="w-[70%] h-[600px] relative left-10 flex flex-col justify-center items-center">
+      <h1 className="name poppins-extrabold font-black relative right-23">vaibhav chavan</h1>
+      <h3 className="profession poppins-extralight font-thin relative right-15">
         Undergraduate,YCIS satara.
       </h3>
       <img
@@ -86,6 +96,38 @@ const Image = () => {
         alt="Vaibhav's Image"
         className="rounded-lg shadow-gray-200 h-[60%] w-full object-cover relative top-1"
       />
+      <div className="socials h-[50px] w-[90%] relative top-3 flex justify-center gap-5 items-start">
+        <a
+          href="https://www.linkedin.com/in/dev-vaibhav-chavan/"
+          target="_blank">
+          <img
+            src="https://thumbs.dreamstime.com/b/linkedin-logo-icon-linkedin-logo-icon-vector-illustration-358522873.jpg"
+            className="h-[25px] w-[25px] rounded-[50%]"
+            alt=""
+          />
+        </a>
+        <a href="https://github.com/dev-vaibhavchavan/" target="_blank">
+          <img
+            src="https://as2.ftcdn.net/jpg/02/50/30/59/1000_F_250305943_sDC6la1N1fDl3bLgfLxOkQwItIodsdMb.jpg"
+            className="h-[25px] w-[25px] rounded-[50%] object-cover"
+            alt=""
+          />
+        </a>
+        <a href="https://leetcode.com/dev-vaibhavchavan/" target="_blank">
+          <img
+            src="https://preview.redd.it/i-have-been-leetcoding-for-a-while-but-what-does-the-v0-ucy9q7w40wtc1.jpg?width=720&format=pjpg&auto=webp&s=41e11a55faf86e0b7bbbddf934b906212caa0fa9"
+            className="h-[25px] w-[25px] rounded-[50%] object-cover"
+            alt=""
+          />
+        </a>
+        <a href="https://leetcode.com/dev-vaibhavchavan/" target="_blank">
+          <img
+            src="https://preview.redd.it/i-have-been-leetcoding-for-a-while-but-what-does-the-v0-ucy9q7w40wtc1.jpg?width=720&format=pjpg&auto=webp&s=41e11a55faf86e0b7bbbddf934b906212caa0fa9"
+            className="h-[25px] w-[25px] rounded-[50%] object-cover"
+            alt=""
+          />
+        </a>
+      </div>
     </div>
   );
 };
