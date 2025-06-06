@@ -7,6 +7,10 @@ import { useTimeline } from "./context/TimelineContext";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 import Slider from "./components/Slider";
+import Projects from "./components/Projects";
+import LocomotiveScroll from "locomotive-scroll";
+
+const locomotiveScroll = new LocomotiveScroll();
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,10 +34,10 @@ const App = () => {
   });
 
   return (
-    <>
+    <div>
       <div
         ref={textRef}
-        className="flex items-center justify-center poppins-extrabold font-black h-[100px] text-5xl">
+        className="flex items-center justify-center poppins-extrabold font-black h-[100px] text-7xl">
         PORTFOLIO
       </div>
       <div className="flex flex-row w-screen h-[600px] relative">
@@ -55,10 +59,10 @@ const App = () => {
           Continuous Learner
         </h3>
       </div>
-      <Slider/>
-    </>
+      <Slider />
+      <Projects />
+    </div>
   );
 };
 
 export default App;
-

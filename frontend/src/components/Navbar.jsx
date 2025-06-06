@@ -21,22 +21,22 @@ const Navbar = () => {
     <div className="navbar gap-10 flex relative bottom-8 px-8 py-4 border-2 border-gray-400 rounded-md">
       <a
         href=""
-        className="px-4 py-1 hover:rounded-sm hover:bg-white hover:text-black">
+        className="px-4 py-1 hover:rounded-sm hover:bg-purple-700 hover:text-white">
         Projects
       </a>
       <a
         href=""
-        className="px-4 py-1 hover:rounded-sm hover:bg-white hover:text-black">
+        className="px-4 py-1 hover:rounded-sm hover:bg-purple-700 hover:text-white">
         Work Experience
       </a>
       <a
         href=""
-        className="px-4 py-1 hover:rounded-sm hover:bg-white hover:text-black">
+        className="px-4 py-1 hover:rounded-sm hover:bg-purple-700 hover:text-white">
         Academics
       </a>
       <a
         href=""
-        className="px-4 py-1 hover:rounded-sm hover:bg-white hover:text-black">
+        className="px-4 py-1 hover:rounded-sm hover:bg-purple-700 hover:text-white">
         Achievements
       </a>
     </div>
