@@ -9,6 +9,7 @@ import gsap from "gsap";
 import Slider from "./components/Slider";
 import Projects from "./components/Projects";
 import LocomotiveScroll from "locomotive-scroll";
+import WorkExperience from "./components/WorkExperience";
 
 const locomotiveScroll = new LocomotiveScroll();
 
@@ -37,7 +38,7 @@ const App = () => {
     <div>
       <div
         ref={textRef}
-        className="flex items-center justify-center poppins-extrabold font-black h-[100px] text-7xl">
+        className="flex items-center justify-center poppins-extrabold font-black h-[100px] text-7xl font-(family-name:HelveticaNeueBlack)">
         PORTFOLIO
       </div>
       <div className="flex flex-row w-screen h-[600px] relative">
@@ -50,20 +51,20 @@ const App = () => {
         </div>
       </div>
       <div className="skills w-[80%] h-[50px] flex items-center justify-around relative left-[126.6px] opacity-0">
-        <h3 className="px-5 py-3 rounded-sm bg-purple-700">
+        <h3 className="px-5 py-3 rounded-sm bg-purple-700 font-mono">
           Good Problem Solver
         </h3>
-        <h3 className="px-5 py-3 rounded-sm bg-purple-700">Clean Coder</h3>
-        <h3 className="px-5 py-3 rounded-sm bg-purple-700">Stack Agnostic</h3>
-        <h3 className="px-5 py-3 rounded-sm bg-purple-700">
+        <h3 className="px-5 py-3 rounded-sm bg-purple-700 font-mono">Clean Coder</h3>
+        <h3 className="px-5 py-3 rounded-sm bg-purple-700 font-mono">Stack Agnostic</h3>
+        <h3 className="px-5 py-3 rounded-sm bg-purple-700 font-mono">
           Continuous Learner
         </h3>
       </div>
       <Slider />
       <Projects />
+      <WorkExperience/>
     </div>
   );
 };
 
 export default App;
-

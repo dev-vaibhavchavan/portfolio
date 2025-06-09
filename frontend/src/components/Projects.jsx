@@ -5,7 +5,7 @@ const Projects = () => {
     <div className="relative top-30 h-[700px] w-full flex flex-col gap-10 items-center justify-center">
       <h1 className="font-extrabold text-5xl">PROJECTS</h1>
       <div className="h-[200px] w-[90%] flex items-center justify-around">
-        <div className="h-[40px] w-[40px] bg-purple-700 rounded-[50%] font-bold text-4xl flex items-center justify-center">
+        <div className="h-[40px] w-[40px] bg-purple-700 rounded-[50%] font-bold text-4xl font-serif flex pb-2 items-center justify-center">
           1
         </div>
         <div className="w-[60%]">
@@ -27,7 +27,7 @@ const Projects = () => {
         </div>
       </div>
       <div className="h-[200px] w-[90%] flex items-center justify-around">
-        <div className="h-[40px] w-[40px] bg-purple-700 rounded-[50%] font-bold text-4xl flex items-center justify-center">
+        <div className="h-[40px] w-[40px] bg-purple-700 rounded-[50%] font-bold text-4xl flex font-serif pb-2 items-center justify-center">
           2
         </div>
         <div className="w-[60%]">
@@ -45,7 +45,7 @@ const Projects = () => {
         </div>
       </div>
       <div className="h-[200px] w-[90%] flex items-center justify-around">
-        <div className="h-[40px] w-[40px] bg-purple-700 rounded-[50%] font-bold text-4xl flex items-center justify-center">
+        <div className="h-[40px] w-[40px] bg-purple-700 rounded-[50%] font-bold text-4xl font-serif pb-3 flex items-center justify-center">
           3
         </div>
         <div className="w-[60%]">

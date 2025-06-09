@@ -7,26 +7,9 @@ body {
   overflow-x: hidden;
 }
 
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.poppins-extralight {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
+@font-face {
+  font-family: 'HelveticaNeueBlack';
+  src: url('./assets/fonts/HelveticaNeueBlack.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
 }

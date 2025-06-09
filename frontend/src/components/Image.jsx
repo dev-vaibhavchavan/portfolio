@@ -1,4 +1,4 @@
-import myImage from "../assets/images/my_image.jpg";
+import myImage from "../assets/images/myimage.jpg";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
@@ -86,8 +86,10 @@ const Image = () => {
 
   return (
     <div className="w-[70%] h-[600px] relative left-10 flex flex-col justify-center items-center">
-      <h1 className="name poppins-extrabold font-black relative right-23">vaibhav chavan</h1>
-      <h3 className="profession poppins-extralight font-thin relative right-15">
+      <h1 className="name poppins-extrabold font-black relative right-25">
+        vaibhav chavan
+      </h1>
+      <h3 className="profession poppins-extralight font-thin relative right-[69px]">
         Undergraduate,YCIS satara.
       </h3>
       <img
@@ -102,28 +104,31 @@ const Image = () => {
           target="_blank">
           <img
             src="https://thumbs.dreamstime.com/b/linkedin-logo-icon-linkedin-logo-icon-vector-illustration-358522873.jpg"
-            className="h-[25px] w-[25px] rounded-[50%]"
+            className="h-[30px] w-[30px] rounded-[50%]"
             alt=""
           />
         </a>
         <a href="https://github.com/dev-vaibhavchavan/" target="_blank">
           <img
             src="https://as2.ftcdn.net/jpg/02/50/30/59/1000_F_250305943_sDC6la1N1fDl3bLgfLxOkQwItIodsdMb.jpg"
-            className="h-[25px] w-[25px] rounded-[50%] object-cover"
+            className="h-[30px] w-[30px] rounded-[50%] object-cover"
             alt=""
           />
         </a>
         <a href="https://leetcode.com/dev-vaibhavchavan/" target="_blank">
           <img
             src="https://preview.redd.it/i-have-been-leetcoding-for-a-while-but-what-does-the-v0-ucy9q7w40wtc1.jpg?width=720&format=pjpg&auto=webp&s=41e11a55faf86e0b7bbbddf934b906212caa0fa9"
-            className="h-[25px] w-[25px] rounded-[50%] object-cover"
+            className="h-[30px] w-[30px] rounded-[50%] object-cover"
             alt=""
           />
         </a>
-        <a href="https://leetcode.com/dev-vaibhavchavan/" target="_blank">
+        <a
+          href="https://www.instagram.com/imvaibhav47/
+"
+          target="_blank">
           <img
-            src="https://preview.redd.it/i-have-been-leetcoding-for-a-while-but-what-does-the-v0-ucy9q7w40wtc1.jpg?width=720&format=pjpg&auto=webp&s=41e11a55faf86e0b7bbbddf934b906212caa0fa9"
-            className="h-[25px] w-[25px] rounded-[50%] object-cover"
+            src="https://static.vecteezy.com/system/resources/previews/042/387/654/non_2x/instagram-button-icon-set-instagram-screen-social-media-and-social-network-interface-template-stories-user-button-symbol-sign-logo-stories-liked-editorial-free-png.png"
+            className="h-[30px] w-[30px] rounded-[50%] object-cover bg-white"
             alt=""
           />
         </a>
@@ -133,3 +138,4 @@ const Image = () => {
 };
 
 export default Image;
+
